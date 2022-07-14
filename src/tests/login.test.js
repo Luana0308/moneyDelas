@@ -4,7 +4,7 @@ import App from '../App';
 
 test('Verificando se existe o campo Email.', () => {
   render(<App/>); 
-  const inputEmail = screen.getByLabelText('Email');
+  const inputEmail = screen.getByLabelText('Email:');
   expect(inputEmail).toBeInTheDocument();
   expect(inputEmail).toHaveProperty('type', 'email');
 });
